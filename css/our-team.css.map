@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,CAAC;CACb;;AAED,AAAA,gBAAgB,CAAC;EACb,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,uBAAuB;CACtC;;AAED,AAAA,gBAAgB,AAAA,IAAK,CAAA,WAAW,EAAE;EAC9B,YAAY,EAAE,IAAI;CACrB",
+    "sources": [
+        "../scss/components/our-team.scss"
+    ],
+    "names": [],
+    "file": "our-team.css"
+}

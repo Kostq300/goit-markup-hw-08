@@ -1,0 +1,23 @@
+//utils
+@import './utils/vars';
+@import './utils/vissually-hidden';
+
+
+//base styles
+@import './base/common';
+@import './base/container';
+@import './base/reset';
+
+
+//components
+@import './components/header';
+@import './components/hero/hero';
+@import './components/benefits';
+@import './components/about';
+@import './components/our-team';
+@import './components/clients';
+@import './components/footer';
+@import './components/section-portfolio'
+
+
+//layuots

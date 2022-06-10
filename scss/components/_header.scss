@@ -1,0 +1,122 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+nav {
+  margin-right: auto;
+}
+
+.nav__box {
+  display: flex;
+  align-items: center;
+}
+
+.link__logo {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: inline-block;
+}
+
+.logo {
+  color: var(--accent-color);
+}
+
+.active__page {
+  color: var(--accent-color);
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
+}
+
+.site__nav {
+  display: flex;
+}
+
+.site__nav-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  display: flex;
+  width: 294px;
+}
+
+.site__nav-link {
+  position: relative;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--duration) var(--timing-function);
+
+  &:hover::after,&:focus::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
+  &:hover, &:focus{
+    color: var(--accent-color);
+  }
+}
+
+.site__nav-item {
+  color: black;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+
+.contact__list {
+  display: flex;
+}
+
+.contact__list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  transition: color var(--duration) var(--timing-function);
+
+  &:hover, &:focus{
+    color: var(--accent-color);
+    transition: transform var(--duration) var(--timing-function);
+  }
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
