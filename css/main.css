@@ -22,6 +22,29 @@
           clip-path: inset(50%);
 }
 
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   background-color: var(--primary-white-color);
   font-family: "Roboto", sans-serif;
@@ -46,34 +69,34 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
-a {
-  color: var(--primary-text-color);
-  text-decoration: none;
+@media screen and (max-width: 479px) {
+  .container {
+    width: 100%;
+  }
 }
 
-h1,
-h2,
-h3,
-p,
-ul {
-  margin: 0;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
-img {
-  display: block;
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .page-header {
@@ -502,11 +525,32 @@ nav {
 }
 
 .list__ben {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 767.98px) {
+  .list__ben {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .list__ben {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list__ben {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .benefits__list {
@@ -535,9 +579,6 @@ nav {
 
 .list__ben-item {
   width: 270px;
-}
-
-.list__ben-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -554,6 +595,12 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767.98px) {
+  .icon__section {
+    width: 450px;
+  }
 }
 
 .main__list {

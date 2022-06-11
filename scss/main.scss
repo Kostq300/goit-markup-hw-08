@@ -1,12 +1,13 @@
 //utils
 @import './utils/vars';
 @import './utils/vissually-hidden';
+@import './utils/mixin';
 
 
 //base styles
+@import './base/reset';
 @import './base/common';
 @import './base/container';
-@import './base/reset';
 
 
 //components
@@ -17,7 +18,8 @@
 @import './components/our-team';
 @import './components/clients';
 @import './components/footer';
-@import './components/section-portfolio'
+@import './components/section-portfolio';
+
 
 
 //layuots
