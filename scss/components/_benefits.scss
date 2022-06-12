@@ -12,7 +12,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 768px;
   }
   
   @include mq(desktop) {
@@ -77,9 +76,9 @@
                 margin-bottom: 30px;
         }
 
-                &:nth-child(2n) {
+            &:nth-child(2n) {
                     margin-right: 0;
-                }
+        }
 
 }
 }

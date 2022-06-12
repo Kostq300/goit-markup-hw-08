@@ -6,6 +6,20 @@ body {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            padding-bottom: 60px;
+            padding-top: 60px;
+        }
+    
+        @media screen and (max-width: 479px) {
+            padding-bottom: 60px;
+            padding-top: 60px;
+        }
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding-bottom: 60px;
+            padding-top: 60px;
+        }
 }
 
 .main__title {
@@ -20,4 +34,14 @@ body {
     margin-left: 0;
     margin-right: 0;
     
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    
+        @media screen and (max-width: 479px) {
+            margin-bottom: 30px;
+        }
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+}
 }
