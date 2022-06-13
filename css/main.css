@@ -1137,6 +1137,12 @@ address {
   font-style: normal;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  address {
+    text-align: center;
+  }
+}
+
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -1147,9 +1153,6 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -1172,6 +1175,12 @@ address {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .foot {
+    display: block;
   }
 }
 
@@ -1278,6 +1287,16 @@ address {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo__foot {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+  }
+}
+
 .foot__left {
   width: 231px;
   margin-right: 70px;
@@ -1297,6 +1316,12 @@ address {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .foot__left:not(:last-child) {
+    margin-right: 165px;
   }
 }
 
@@ -1320,6 +1345,15 @@ address {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .foot__right {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1415,6 +1449,24 @@ address {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .foot__form {
+    margin-top: 26px;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .foot__form {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .form__foot {
   width: 358px;
   height: 50px;
@@ -1453,6 +1505,38 @@ address {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form__foot {
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .top__foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top__foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1475,6 +1559,18 @@ address {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form {
     margin-top: 20px;
   }
 }
@@ -1533,6 +1629,13 @@ address {
 }
 
 @media screen and (max-width: 479px) {
+  .btn__foot {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .btn__foot {
     margin-right: auto;
     margin-left: auto;

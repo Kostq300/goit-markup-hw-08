@@ -1,5 +1,9 @@
 address {
     font-style: normal;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            text-align: center;
+                    }
+                    
 }
 
 .footer {
@@ -10,7 +14,8 @@ address {
 
 .foot {
     display: flex;
-    align-items: baseline;
+    
+    
 
     @media screen and (min-width: 480px) and (max-width: 767px) {
             display: block;
@@ -26,6 +31,10 @@ address {
             margin-left: auto;
             margin-right: auto;
         }
+
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    display: block;
+                }
 }
 
 .foot__info{
@@ -102,6 +111,12 @@ address {
             align-items: center;
             margin-right: 0;
         }
+
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                   text-align: center;
+                   justify-content: center;
+                   margin-right: 0;
+                }
 }
 
 .foot__left {
@@ -119,6 +134,12 @@ address {
             margin-left: auto;
             margin-bottom: 60px;
         }
+
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    &:not(:last-child){
+                        margin-right: 165px;
+                    }
+                }
 }
 
 .foot__right {
@@ -138,6 +159,12 @@ address {
                 margin-left: auto;
                 margin-bottom: 60px;
         }
+
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    text-align: center;
+                    justify-content: center;
+                    
+                }
 }
 
 .text__foot {
@@ -210,6 +237,17 @@ address {
             margin-left: auto;
             text-align: center;
         }
+
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    margin-top: 26px;
+                    text-align: center;
+                    justify-content: center;
+                }
+
+                                @media screen and (min-width: 1200px) {
+                                    align-items: baseline;
+                
+                                }
 }
 
 .form__foot {
@@ -239,6 +277,28 @@ address {
             width: 100%;
             margin-bottom: 20px;
         }
+
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    width: 450px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+}
+
+.top__foot{
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                    justify-content: center;
+        
+                }
 }
 
 .form {
@@ -260,6 +320,15 @@ address {
                 margin-top: 20px;
         }
         
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    display: block;
+                    
+            }
+
+                        @media screen and (min-width: 1200px) {
+                            margin-top: 20px;
+            
+                        }
 }
 
 .foot__label {
@@ -271,8 +340,8 @@ address {
         text-align: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-    color: var(--primary-white-color);
-    margin-bottom: 20px;
+        color: var(--primary-white-color);
+        margin-bottom: 20px;
 
     @media screen and (min-width: 480px) and (max-width: 767px) {
             width: 219px;
@@ -307,6 +376,11 @@ address {
         margin-right: auto;
             margin-left: auto;
         }
+
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    margin-right: auto;
+                    margin-left: auto;
+                }
 }
 
 .btn__foot-port {
