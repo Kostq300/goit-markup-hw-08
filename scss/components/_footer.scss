@@ -22,10 +22,9 @@ address {
     
         @media screen and (max-width: 479px) {
             display: block;
-            width: 480px;
-            justify-content: center;
-                align-items: center;
-                text-align: center;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
 }
 
@@ -150,6 +149,10 @@ address {
     text-transform: uppercase;
     color: var(--primary-white-color);
     margin-bottom: 20px;
+
+    @media screen and (max-width: 479px) {
+            text-align: center;
+        }
 }
 
 .soc__list {
@@ -202,9 +205,10 @@ address {
         }
     
         @media screen and (max-width: 479px) {
-            width: 450px;
+            width: 100%;
             margin-right: auto;
             margin-left: auto;
+            text-align: center;
         }
 }
 
@@ -280,10 +284,10 @@ address {
     
         @media screen and (max-width: 479px) {
             width: 219px;
-            margin-right: 0;
-            justify-content: center;
-            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 20px;
+            
         }
 }
 

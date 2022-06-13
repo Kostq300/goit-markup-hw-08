@@ -1169,14 +1169,9 @@ address {
 @media screen and (max-width: 479px) {
   .foot {
     display: block;
-    width: 480px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1339,6 +1334,12 @@ address {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 479px) {
+  .text__foot {
+    text-align: center;
+  }
+}
+
 .soc__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1407,9 +1408,10 @@ address {
 
 @media screen and (max-width: 479px) {
   .foot__form {
-    width: 450px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
   }
 }
 
@@ -1505,11 +1507,8 @@ address {
 @media screen and (max-width: 479px) {
   .foot__label {
     width: 219px;
-    margin-right: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
   }
 }
