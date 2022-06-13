@@ -11,6 +11,39 @@ address {
 .foot {
     display: flex;
     align-items: baseline;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            display: block;
+            width: 480px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    
+        @media screen and (max-width: 479px) {
+            display: block;
+            width: 480px;
+            justify-content: center;
+                align-items: center;
+                text-align: center;
+        }
+}
+
+.foot__info{
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            display: block;
+            justify-content: center;
+                align-items: center;
+                text-align: center;
+        }
+    
+        @media screen and (max-width: 479px) {
+            display: block;
+            justify-content: center;
+                align-items: center;
+                text-align: center;
+                
+        }
 }
 
 .address {
@@ -27,6 +60,16 @@ address {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.foot__list{
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            justify-content: center;
+        }
+    
+        @media screen and (max-width: 479px) {
+            justify-content: center;
+        }
 }
 
 .foot__list:not(:last-child) {
@@ -46,16 +89,56 @@ address {
     margin-bottom: 20px;
     margin-right: 156px;
     padding: 0;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0;
+        }
+    
+        @media screen and (max-width: 479px) {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0;
+        }
 }
 
 .foot__left {
     width: 231px;
     margin-right: 70px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            width: 232px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 60px;
+        }
+    
+        @media screen and (max-width: 479px) {
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 60px;
+        }
 }
 
 .foot__right {
     width: 206px;
     display: block;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            width: 206px;
+            margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 60px;
+        }
+    
+        @media screen and (max-width: 479px) {
+            width: 206px;
+            margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 60px;
+        }
 }
 
 .text__foot {
@@ -111,6 +194,18 @@ address {
     display: block;
     margin-left: 93px;
     width: 570px;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            width: 450px;
+            margin-right: auto;
+                margin-left: auto;
+        }
+    
+        @media screen and (max-width: 479px) {
+            width: 450px;
+            margin-right: auto;
+            margin-left: auto;
+        }
 }
 
 .form__foot {
@@ -126,24 +221,70 @@ address {
     padding-right: 16px;
     display: flex;
     color: var(--primary-white-color);
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        @media screen and (max-width: 479px) {
+           
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
 }
 
 .form {
     display: flex;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        display: block;
+            width: 100%;
+            margin-right: auto;
+                margin-left: auto;
+                margin-top: 20px;
+                
+        }
+    
+        @media screen and (max-width: 479px) {
+            display: block;
+            width: 100%;
+            margin-right: auto;
+                margin-left: auto;
+                margin-top: 20px;
+        }
+        
 }
 
 .foot__label {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
     color: var(--primary-white-color);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            width: 219px;
+            margin-right: 0;
+            justify-content:center ;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        @media screen and (max-width: 479px) {
+            width: 219px;
+            margin-right: 0;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 }
 
 .btn__foot {
@@ -152,6 +293,16 @@ address {
     height: 50px;
     align-items: center;
     margin-left: 12px;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        margin-right: auto;
+            margin-left: auto;
+        }
+    
+        @media screen and (max-width: 479px) {
+        margin-right: auto;
+            margin-left: auto;
+        }
 }
 
 .btn__foot-port {
