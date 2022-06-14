@@ -43,6 +43,8 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -1056,6 +1058,7 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 210px;
   }
   .client__list-item:nth-child(2n) {
     margin: 0;
@@ -1067,10 +1070,22 @@ nav {
 
 @media screen and (max-width: 479px) {
   .client__list-item {
-    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 210px;
+    template-columns: 1fr 1fr;
   }
-  .client__list-item:not(:last-child) {
-    margin-bottom: 15px;
+  .client__list-item:nth-child(2n) {
+    margin: 0;
+  }
+  .client__list-item:nth-child(n-2) {
+    margin-bottom: 30px;
   }
 }
 

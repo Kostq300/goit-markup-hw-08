@@ -29,6 +29,7 @@
   @media screen and (max-width: 479px) {
     display: block;
     justify-content: center;
+    
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -50,6 +51,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 210px;
     &:nth-child(2n) {
       margin: 0;
     }
@@ -59,10 +61,24 @@
   }
 
   @media screen and (max-width: 479px) {
-    width: 100%;
-    &:not(:last-child) {
-      margin-bottom: 15px;
-    }
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 210px;
+      template-columns: 1fr 1fr;
+    
+      &:nth-child(2n) {
+        margin: 0;
+      }
+    
+      &:nth-child(n-2) {
+        margin-bottom: 30px;
+      }
+
+    // width: 100%;
+    // &:not(:last-child) {
+    //   margin-bottom: 15px;
+    // }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
