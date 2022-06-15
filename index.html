@@ -23,12 +23,41 @@
           <a class="link__logo link" href="./index.html"
             ><span class="logo">Web</span>Studio</a
           >
-
           <button class="menu__btn" type="button" data-menu-open>
             <svg class="menu__icon" width="40px" height="40px">
-              <use href="./image/icon/menu-icon.svg#icon-menu_btn"></use>
+            <use href="./image/icon/menu-icon.svg#icon-menu_btn"></use>
             </svg>
           </button>
+          <div class="backdrop is__hidden" data-menu>
+            <div class="menu__wrapper">
+              <button class="menu__btn-close" type="button" data-menu-close>
+                <svg class="menu__icon" width="40px" height="40px">
+                  <use href="./image/icon/menu-icon.svg#icon-close-btn"></use>
+                </svg>
+              </button>
+              <ul class="list menu__nav-list">
+                <li class="menu__nav-item"><a class="link menu__nav current__page" href="./index.html">Студия</a></li>
+                <li class="menu__nav-item"><a class="link menu__nav" href="./portfolio.html">Портфолио</a></li>
+                <li class="menu__nav-item"><a class="link menu__nav" href="./">Контакты</a></li>
+              </ul>
+
+              <ul class="list menu__contact-list">
+                <li class="menu__contact-item"><a class="link menu__contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="menu__contact-item"><a class="link menu__contact menu__contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              </ul>
+
+              <ul class="list menu__soc-list">
+                <li class="menu__soc-item"><a class="link menu__soc" href="">Instagram</a></li>
+                <li class="menu__soc-item"><a class="link menu__soc" href="">Twitter</a></li>
+                <li class="menu__soc-item"><a class="link menu__soc" href="">Facebook</a></li>
+                <li class="menu__soc-item"><a class="link menu__soc" href="">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+              
+              
+            
+          
 
           <ul class="site__nav-list list">
             <li class="site__nav-item">
@@ -69,8 +98,8 @@
 
     </header> 
 
-    <!-- <main>
-      <section class="hero">
+    <main>
+       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="btn" type="button" data-modal-open>
@@ -130,7 +159,7 @@
             </div>
           </div>
         </div>
-      </section>  -->
+      </section>    -->
 
       <section class="section benefits__list">
         <div class="container">
@@ -510,7 +539,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

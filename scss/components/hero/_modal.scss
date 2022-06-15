@@ -58,8 +58,9 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: transparent;
 
-    &:hover .modal__icon-btn {
-            fill: #2196f3
+        & .modal__icon-btn:hover,
+        & .modal__icon-btn:focus {
+            fill: var(--accent-color);
         }
 }
 

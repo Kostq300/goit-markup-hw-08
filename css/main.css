@@ -179,28 +179,6 @@ nav {
   color: var(--accent-color);
 }
 
-.menu__btn {
-  width: 40px;
-  height: 40px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  background-color: var(--primary-white-color);
-  margin-left: auto;
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .menu__btn {
-    padding: 0;
-  }
-}
-
-.menu__icon {
-  width: 40px;
-  height: 40px;
-}
-
 .active__page {
   color: var(--accent-color);
 }
@@ -321,10 +299,6 @@ nav {
 
 .contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
-  -webkit-transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function), -webkit-transform var(--duration) var(--timing-function);
 }
 
 .contacts__icon {
@@ -458,8 +432,9 @@ nav {
   background-color: transparent;
 }
 
-.modal__btn:hover .modal__icon-btn {
-  fill: #2196f3;
+.modal__btn .modal__icon-btn:hover,
+.modal__btn .modal__icon-btn:focus {
+  fill: var(--accent-color);
 }
 
 .form__title {
@@ -1105,10 +1080,6 @@ nav {
   height: 92px;
 }
 
-.client__list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .client__list-item {
     display: -webkit-box;
@@ -1121,10 +1092,10 @@ nav {
             justify-content: center;
     width: 210px;
   }
-  .client__list-item:nth-child(2n) {
-    margin: 0;
+  .client__list-item:nth-child(2n+1) {
+    margin-right: 30px;
   }
-  .client__list-item:nth-child(n-2) {
+  .client__list-item:nth-child(-n+4) {
     margin-bottom: 30px;
   }
 }
@@ -1132,19 +1103,11 @@ nav {
 @media screen and (max-width: 479px) {
   .client__list-item {
     width: calc(50% - 15px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
-  .client__list-item:nth-child(2n) {
-    margin: 0;
+  .client__list-item:nth-child(2n+1) {
+    margin-right: 30px;
   }
-  .client__list-item:nth-child(n-2) {
+  .client__list-item:nth-child(-n+4) {
     margin-bottom: 30px;
   }
 }
@@ -1172,6 +1135,12 @@ nav {
   }
   .client__list-item:nth-child(-n + 3) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client__list-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -1888,5 +1857,155 @@ address {
 .description {
   position: relative;
   overflow: hidden;
+}
+
+.menu__wrapper {
+  position: absolute;
+  background-color: var(--primary-white-color);
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 41px;
+  padding-right: 39px;
+  left: 50%;
+  top: 45%;
+  -webkit-transform: translate(-50%, -45%);
+          transform: translate(-50%, -45%);
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  -webkit-transition: -webkit-transform var(--duration) var(--timing-function);
+  transition: -webkit-transform var(--duration) var(--timing-function);
+  transition: transform var(--duration) var(--timing-function);
+  transition: transform var(--duration) var(--timing-function), -webkit-transform var(--duration) var(--timing-function);
+}
+
+.backdrop.is__hidden .menu__wrapper {
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+          transform: translate(-50%, -50%) scale(0.5);
+}
+
+.menu__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.menu__btn {
+  width: 40px;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .menu__btn {
+    padding: 0;
+  }
+}
+
+.menu__btn-close {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  right: 8px;
+  top: 8px;
+  padding: 0;
+  -webkit-transition: color var(--duration) var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
+}
+
+.menu__btn-close .menu__icon:hover, .menu__btn-close .menu__icon:focus {
+  fill: var(--accent-color);
+}
+
+.menu__nav-list {
+  margin-bottom: 302px;
+}
+
+.menu__nav {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.02em;
+  -webkit-transition: color var(--duration) var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
+}
+
+.menu__nav:hover, .menu__nav:focus {
+  color: var(--accent-color);
+}
+
+.menu__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.current__page {
+  color: var(--accent-color);
+}
+
+.menu__contact-list {
+  margin-bottom: 64px;
+}
+
+.menu__contact {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.menu__contact-mail {
+  color: var(--secondary-text-color);
+}
+
+.menu__contact-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu__soc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__soc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.menu__soc:not(:last-child) {
+  margin-right: 10px;
+}
+
+.menu__soc-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu__soc-item:not(:last-child) {
+  padding-right: 10px;
+}
+
+.menu__soc-item:not(:last-child) {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */
