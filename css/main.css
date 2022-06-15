@@ -169,8 +169,36 @@ nav {
   display: inline-block;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .link__logo {
+    padding: 0;
+  }
+}
+
 .logo {
   color: var(--accent-color);
+}
+
+.menu__btn {
+  width: 40px;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: var(--primary-white-color);
+  margin-left: auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .menu__btn {
+    padding: 0;
+  }
+}
+
+.menu__icon {
+  width: 40px;
+  height: 40px;
 }
 
 .active__page {
@@ -193,6 +221,17 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .site__nav {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .site__nav-list {
