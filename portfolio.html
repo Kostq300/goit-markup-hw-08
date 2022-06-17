@@ -20,7 +20,9 @@
     <header class="page-header">
       <div class="container nav__box">
         <nav class="site__nav">
-          <a class="link__logo link" href="./index.html"><span class="logo">Web</span>Studio</a>
+          <a class="link__logo link" href="./index.html"
+            ><span class="logo">Web</span>Studio</a
+          >
           <button class="menu__btn" type="button" data-menu-open>
             <svg class="menu__icon" width="40px" height="40px">
               <use href="./image/icon/menu-icon.svg#icon-menu_btn"></use>
@@ -34,37 +36,63 @@
                 </svg>
               </button>
               <ul class="list menu__nav-list">
-                <li class="menu__nav-item"><a class="link menu__nav" href="./index.html">Студия</a></li>
-                <li class="menu__nav-item"><a class="link menu__nav current__page" href="./portfolio.html">Портфолио</a></li>
-                <li class="menu__nav-item"><a class="link menu__nav" href="./">Контакты</a></li>
-              </ul>
-    
-              <ul class="list menu__contact-list">
-                <li class="menu__contact-item"><a class="link menu__contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="menu__nav-item">
+                  <a class="link menu__nav" href="./index.html">Студия</a>
                 </li>
-                <li class="menu__contact-item"><a class="link menu__contact menu__contact-mail"
-                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="menu__nav-item">
+                  <a
+                    class="link menu__nav current__page"
+                    href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="menu__nav-item">
+                  <a class="link menu__nav" href="./">Контакты</a>
+                </li>
               </ul>
-    
+
+              <ul class="list menu__contact-list">
+                <li class="menu__contact-item">
+                  <a class="link menu__contact" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu__contact-item">
+                  <a
+                    class="link menu__contact menu__contact-mail"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
               <ul class="list menu__soc-list">
-                <li class="menu__soc-item"><a class="link menu__soc" href="">Instagram</a></li>
-                <li class="menu__soc-item"><a class="link menu__soc" href="">Twitter</a></li>
-                <li class="menu__soc-item"><a class="link menu__soc" href="">Facebook</a></li>
-                <li class="menu__soc-item"><a class="link menu__soc" href="">LinkedIn</a></li>
+                <li class="menu__soc-item">
+                  <a class="link menu__soc" href="">Instagram</a>
+                </li>
+                <li class="menu__soc-item">
+                  <a class="link menu__soc" href="">Twitter</a>
+                </li>
+                <li class="menu__soc-item">
+                  <a class="link menu__soc" href="">Facebook</a>
+                </li>
+                <li class="menu__soc-item">
+                  <a class="link menu__soc" href="">LinkedIn</a>
+                </li>
               </ul>
             </div>
           </div>
-    
-    
-    
-    
-    
+
           <ul class="site__nav-list list">
             <li class="site__nav-item">
               <a class="site__nav-link link" href="./index.html">Студия</a>
             </li>
             <li class="site__nav-item">
-              <a class="site__nav-link link active__page" href="./portfolio.html">Портфолио</a>
+              <a
+                class="site__nav-link link active__page"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="site__nav-item">
               <a class="site__nav-link link" href="./">Контакты</a>
@@ -77,19 +105,19 @@
               <svg class="contacts__icon" width="16px" height="12px">
                 <use href="./image/icon/sprite.svg#icon-mail"></use>
               </svg>
-              info@devstudio.com</a>
+              info@devstudio.com</a
+            >
           </li>
           <li class="contact__list-item">
             <a class="contact__link link" href="tel:+380961111111">
               <svg class="contacts__icon" width="10px" height="16px">
                 <use href="./image/icon/sprite.svg#icon-phone"></use>
               </svg>
-              +38 096 111 11 11</a>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
-    
-    
     </header>
 
     <main>
@@ -117,12 +145,41 @@
             <li class="list__cards-item">
               <a class="link__cards" href="">
                 <div class="description">
-                  <img
-                    class="image"
-                    width="370"
-                    src="./image/portfolio/technohryak.jpg"
-                    alt="Технохряк"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image\portfolio\technohryak-lg@1x.jpg 1x,
+                        ./image\portfolio\technohryak-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\technohryak-md@1x.jpg 1x,
+                        ./image\portfolio\technohryak-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\technohryak-sm@1x.jpg 1x,
+                        ./image\portfolio\technohryak-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="image"
+                      width="370"
+                      src="./image\portfolio\technohryak-lg@1x.jpg"
+                      alt="Технохряк"
+                    />
+                  </picture>
                   <p class="text__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -138,12 +195,41 @@
             <li class="list__cards-item">
               <a class="link__cards" href="">
                 <div class="description">
-                  <img
-                    class="image"
-                    width="370"
-                    src="./image/portfolio/poster.jpg"
-                    alt="Постер"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image\portfolio\poster-lg@1x.jpg 1x,
+                        ./image\portfolio\poster-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\poster-md@1x.jpg 1x,
+                        ./image\portfolio\poster-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\poster-sm@1x.jpg 1x,
+                        ./image\portfolio\poster-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="image"
+                      width="370"
+                      src="./image\portfolio\poster-lg@1x.jpg"
+                      alt="Постер"
+                    />
+                  </picture>
                   <p class="text__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -161,12 +247,41 @@
             <li class="list__cards-item">
               <a class="link__cards" href="">
                 <div class="description">
-                  <img
-                    class="image"
-                    width="370"
-                    src="./image/portfolio/restoraunt.jpg"
-                    alt="Ресторан"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image\portfolio\restoraunt-lg@1x.jpg 1x,
+                        ./image\portfolio\restoraunt-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\restoraunt-md@1x.jpg 1x,
+                        ./image\portfolio\restoraunt-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\restoraunt-sm@1x.jpg 1x,
+                        ./image\portfolio\restoraunt-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="image"
+                      width="370"
+                      src="./image\portfolio\restoraunt-lg@1x.jpg"
+                      alt="Ресторан"
+                    />
+                  </picture>
                   <p class="text__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -184,12 +299,41 @@
             <li class="list__cards-item">
               <a class="link__cards" href="">
                 <div class="description">
-                  <img
-                    class="image"
-                    width="370"
-                    src="./image/portfolio/projectprime.jpg"
-                    alt="Проэкт прайм"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image\portfolio\projectprime-lg@1x.jpg 1x,
+                        ./image\portfolio\projectprime-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\projectprime-md@1x.jpg 1x,
+                        ./image\portfolio\projectprime-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\projectprime-sm@1x.jpg 1x,
+                        ./image\portfolio\projectprime-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="image"
+                      width="370"
+                      src="./image\portfolio\projectprime-lg@1x.jpg"
+                      alt="Проэкт прайм"
+                    />
+                  </picture>
                   <p class="text__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -207,12 +351,41 @@
             <li class="list__cards-item">
               <a class="link__cards" href="">
                 <div class="description">
-                  <img
-                    class="image"
-                    width="370"
-                    src="./image/portfolio/boxes.jpg"
-                    alt="Проэкт коробки"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image\portfolio\boxes-lg@1x.jpg 1x,
+                        ./image\portfolio\boxes-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\boxes-md@1x.jpg 1x,
+                        ./image\portfolio\boxes-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\boxes-sm@1x.jpg 1x,
+                        ./image\portfolio\boxes-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="image"
+                      width="370"
+                      src="./image\portfolio\boxes-lg@1x.jpg"
+                      alt="Проэкт коробки"
+                    />
+                  </picture>
                   <p class="text__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -228,12 +401,41 @@
             <li class="list__cards-item">
               <a class="link__cards" href="">
                 <div class="description">
-                  <img
-                    class="image"
-                    width="370"
-                    src="./image/portfolio/inspiration.jpg"
-                    alt="Технохряк"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image\portfolio\inspiration-lg@1x.jpg 1x,
+                        ./image\portfolio\inspiration-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\inspiration-md@1x.jpg 1x,
+                        ./image\portfolio\inspiration-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\inspiration-sm@1x.jpg 1x,
+                        ./image\portfolio\inspiration-sm@1x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="image"
+                      width="370"
+                      src="./image\portfolio\inspiration-lg@1x.jpg"
+                      alt="Технохряк"
+                    />
+                  </picture>
                   <p class="text__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -251,12 +453,41 @@
             <li class="list__cards-item">
               <a class="link__cards" href="">
                 <div class="description">
-                  <img
-                    class="image"
-                    width="370"
-                    src="./image/portfolio/limited.jpg"
-                    alt="Издание лимитед"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image\portfolio\limited-lg@1x.jpg 1x,
+                        ./image\portfolio\limited-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\limited-md@1x.jpg 1x,
+                        ./image\portfolio\limited-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\limited-sm@1x.jpg 1x,
+                        ./image\portfolio\limited-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="image"
+                      width="370"
+                      src="./image\portfolio\limited-lg@1x.jpg"
+                      alt="Издание лимитед"
+                    />
+                  </picture>
                   <p class="text__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -274,12 +505,41 @@
             <li class="list__cards-item">
               <a class="link__cards" href="">
                 <div class="description">
-                  <img
-                    class="image"
-                    width="370"
-                    src="./image/portfolio/lab.jpg"
-                    alt="Проэкт лаборатория"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image\portfolio\lab-lg@1x.jpg   1x,
+                        ./image\portfolio\lab-lg@2x.jpg2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\lab-md@1x.jpg 1x,
+                        ./image\portfolio\lab-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\lab-sm@1x.jpg 1x,
+                        ./image\portfolio\lab-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="image"
+                      width="370"
+                      src="./image\portfolio\lab-lg@1x.jpg"
+                      alt="Проэкт лаборатория"
+                    />
+                  </picture>
                   <p class="text__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -297,12 +557,41 @@
             <li class="list__cards-item">
               <a class="link__cards" href="">
                 <div class="description">
-                  <img
-                    class="image"
-                    width="370"
-                    src="./image/portfolio/growing.jpg"
-                    alt="Гроувинг бизнес"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image\portfolio\growing-lg@1x.jpg 1x,
+                        ./image\portfolio\growing-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\growing-md@1x.jpg 1x,
+                        ./image\portfolio\growing-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./image\portfolio\growing-sm@1x.jpg 1x,
+                        ./image\portfolio\growing-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="image"
+                      width="370"
+                      src="./image\portfolio\growing-lg@1x.jpg"
+                      alt="Гроувинг бизнес"
+                    />
+                  </picture>
                   <p class="text__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -326,16 +615,22 @@
       <div class="container foot">
         <div class="top__foot">
           <div class="foot__left">
-            <a class="link__logo link logo__foot" href="./index.html"><span class="logo">Web</span><span
-                class="logo__item">Studio</span></a>
+            <a class="link__logo link logo__foot" href="./index.html"
+              ><span class="logo">Web</span
+              ><span class="logo__item">Studio</span></a
+            >
             <address class="foot__info">
               <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
               <ul class="list">
                 <li class="foot__list">
-                  <a class="address__item link" href="mailto:info@example.com">info@example.com</a>
+                  <a class="address__item link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
                 </li>
                 <li class="foot__list">
-                  <a class="address__item link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  <a class="address__item link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
@@ -377,18 +672,20 @@
         <div class="foot__form">
           <strong class="foot__label">Подпишитесь на рассылку</strong>
           <div class="form">
-    
-            <input placeholder="E-mail" class="form__foot" type="email" name="user-mail">
-    
+            <input
+              placeholder="E-mail"
+              class="form__foot"
+              type="email"
+              name="user-mail"
+            />
+
             <button class="btn btn__foot" type="submit">
               Подписаться
               <svg class="foot__icon-form" width="24px" height="24px">
                 <use href="./image/icon/sprite-form.svg#icon-airplane"></use>
               </svg>
             </button>
-    
           </div>
-    
         </div>
       </div>
     </footer>

@@ -16,7 +16,7 @@
 }
 
 .backdrop.is__hidden .menu__wrapper {
-  transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) skew(50deg);
 }
 
 .menu__icon {
