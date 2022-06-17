@@ -22,7 +22,7 @@
             background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                    url(./image/hero/img-hero-sm@1x.jpg);
+                    url(../image/hero/img-hero-sm@1x.jpg);
 
             @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
@@ -30,7 +30,7 @@
                     background-image: linear-gradient(to right,
                                 rgba(47, 48, 58, 0.4),
                                 rgba(47, 48, 58, 0.4)),
-                            url(./image/hero/img-hero-sm@2x.jpg);
+                            url(../image/hero/img-hero-sm@2x.jpg);
                 }
         }
     
@@ -42,7 +42,7 @@
                 background-image: linear-gradient(to right,
                             rgba(47, 48, 58, 0.4),
                             rgba(47, 48, 58, 0.4)),
-                        url(./image/hero/img-hero-sm@1x.jpg);
+                        url(../image/hero/img-hero-sm@1x.jpg);
                 
                     @media (min-device-pixel-ratio: 2),
                     (min-resolution: 192dpi),
@@ -50,7 +50,7 @@
                         background-image: linear-gradient(to right,
                                 rgba(47, 48, 58, 0.4),
                                 rgba(47, 48, 58, 0.4)),
-                            url(./image/hero/img-hero-sm@2x.jpg);
+                            url(../image/hero/img-hero-sm@2x.jpg);
                     }
         }
     
@@ -62,7 +62,7 @@
                 background-image: linear-gradient(to right,
                             rgba(47, 48, 58, 0.4),
                             rgba(47, 48, 58, 0.4)),
-                        url(./image/hero/img-hero-md@1x.jpg);
+                        url(../image/hero/img-hero-md@1x.jpg);
                 
                     @media (min-device-pixel-ratio: 2),
                     (min-resolution: 192dpi),
@@ -70,7 +70,7 @@
                         background-image: linear-gradient(to right,
                                 rgba(47, 48, 58, 0.4),
                                 rgba(47, 48, 58, 0.4)),
-                            url(./image/hero/img-hero-md@2x.jpg);
+                            url(../image/hero/img-hero-md@2x.jpg);
                     }
         }
 
@@ -78,7 +78,7 @@
                     background-image: linear-gradient(to right,
                                 rgba(47, 48, 58, 0.4),
                                 rgba(47, 48, 58, 0.4)),
-                            url(./image/hero/img-hero-lg@1x.jpg);
+                            url(../image\hero\img-hero-lg@1x.jpg);
                     
                         @media (min-device-pixel-ratio: 2),
                         (min-resolution: 192dpi),
@@ -86,7 +86,7 @@
                             background-image: linear-gradient(to right,
                                     rgba(47, 48, 58, 0.4),
                                     rgba(47, 48, 58, 0.4)),
-                                url(./image/hero/img-hero-lg@2x.jpg);
+                                url(../image/hero/img-hero-lg@2x.jpg);
                         }
                 }
 }
