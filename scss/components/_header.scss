@@ -46,7 +46,12 @@ nav {
   
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-right: 88px;
-      
+      font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
     }
 }
 
@@ -203,4 +208,8 @@ nav {
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    margin-right: 8px;
+  }
 }

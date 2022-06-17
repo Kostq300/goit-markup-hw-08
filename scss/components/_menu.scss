@@ -107,6 +107,12 @@ transition: color var(--duration) var(--timing-function);
 }
 
 .menu__contact-mail{
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
     color: var(--secondary-text-color);
 }
 
@@ -118,7 +124,10 @@ transition: color var(--duration) var(--timing-function);
 
 .menu__soc-list {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  @media screen and (max-width: 479px){
+    flex-wrap: wrap;
+  }
 }
 
 .menu__soc {
@@ -136,6 +145,12 @@ transition: color var(--duration) var(--timing-function);
 }
 
 .menu__soc-item {
+@media screen and (max-width: 479px) {
+
+    &:nth-child(4) {
+      margin-top: 10px;
+    }
+}
   &:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }

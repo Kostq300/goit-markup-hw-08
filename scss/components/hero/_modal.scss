@@ -31,6 +31,18 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform var(--duration) var(--timing-function);
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+           width: 450px;
+        }
+    
+        @media screen and (max-width: 479px) {
+            width: calc(100% - 30px);
+        }
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            
+        }
 }
 
 .backdrop.is__hidden .modal__wrapper {
@@ -161,6 +173,17 @@
     margin-left: 13px;
     align-items: center;
     margin-bottom: 40px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            width: 370px;
+        }
+    
+        @media screen and (max-width: 479px) {
+            width: 370px;
+        }
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 370px;
+        }
 }
 
 .form__policy-description {
@@ -171,6 +194,22 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            font-size: 12px;
+                line-height: 1.17;
+        }
+    
+        @media screen and (max-width: 479px) {
+            font-size: 12px;
+                line-height: 1.17;
+                height: 28px;
+        }
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            font-size: 12px;
+                line-height: 1.17;
+        }
 }
 
 .modal-link {
